@@ -18,75 +18,78 @@
 </head>
 
 <body>
-  <main id="container">
-    <div class="logo-container">
-      <img src="./assets/img/behold-logo.png" alt="behold logo">
-    </div>
-
-    <div class="panel">
-
-      <header class="panel__main-header">
-        <h1>Create an account</h1>
-        <p>Already have an account? <a href="#">Sign in</a></p>
-      </header>
-
-      <section class="panel__form">
-        <div class="label-group form__email">
-          <label for="email">Email address
-            <input id="email" type="email" required>
-
-            <div class="pizzaz"></div>
-          </label>
-        </div>
-
-        <div class="label-group form__name">
-          <label for="first_name">First name
-            <input id="first_name" type="text" required>
-
-            <div class="pizzaz"></div>
-          </label>
-
-          <label for="last_name">Last name
-            <input id="last_name" type="text" required>
-
-            <div class="pizzaz"></div>
-          </label>
-        </div>
-
-        <div class="label-group form__password">
-          <label for="password">Password
-            <input id="password" type="password" required>
-
-            <div class="pizzaz"></div>
-          </label>
-        </div>
-
-        <div class="form__dob">
-          <h6>Date of birth</h6>
-          <div class="label-group">
-            <label for="month">Month / Year
-              <input id="month" type="month" min="1900-01" max="2022-07" required>
-
-              <div class="pizzaz"></div>
-            </label>
-        
-            <label for="day">Day
-              <input id="day" type="number" min="1" max="31" required>
-
+  <div class="background-overlay">
+    <main id="container">
+      <div class="logo-container">
+        <img src="./assets/img/behold-logo.png" alt="behold logo">
+      </div>
+  
+      <div class="panel">
+  
+        <header class="panel__main-header">
+          <h1>Create an account</h1>
+          <p>Already have an account? <a href="#">Sign in</a></p>
+        </header>
+  
+        <section class="panel__form">
+          <div class="label-group form__email">
+            <label for="email">Email address
+              <input id="email" type="email" required>
+  
               <div class="pizzaz"></div>
             </label>
           </div>
+  
+          <div class="label-group form__name">
+            <label for="first_name">First name
+              <input id="first_name" type="text" required>
+  
+              <div class="pizzaz"></div>
+            </label>
+  
+            <label for="last_name">Last name
+              <input id="last_name" type="text" required>
+  
+              <div class="pizzaz"></div>
+            </label>
+          </div>
+  
+          <div class="label-group form__password">
+            <label for="password">Password
+              <input id="password" type="password" required>
+  
+              <div class="pizzaz"></div>
+            </label>
+          </div>
+  
+          <div class="form__dob">
+            <h6>Date of birth</h6>
+            <div class="label-group">
+              <label for="month">Month / Year
+                <input id="month" type="month" min="1900-01" max="2022-07" required>
+  
+                <div class="pizzaz"></div>
+              </label>
+          
+              <label for="day">Day
+                <input id="day" type="number" min="1" max="31" required>
+  
+                <div class="pizzaz"></div>
+              </label>
+            </div>
+          </div>
+        </section>
+  
+        <section class="panel__disclaimer">
+          <p>By clicking Create account, I agree that I have read and accepted the <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>.</p>
+        </section>
+        <div class="panel__button-wrap">
+          <span class="panel__button">Create account</span>
         </div>
-      </section>
+      </div>  
+    </main>
+  </div>
 
-      <section class="panel__disclaimer">
-        <p>By clicking Create account, I agree that I have read and accepted the <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>.</p>
-      </section>
-      <div class="panel__button-wrap">
-        <span class="panel__button">Create account</span>
-      </div>
-    </div>  
-  </main>
 </body>
 
 </html>

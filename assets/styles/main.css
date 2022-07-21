@@ -76,6 +76,7 @@ body {
   height: 100%;
 
   background-image: url(/assets/img/flowerPlant.jpeg);
+  background-size: cover;
 }
 h1 {
   line-height: 4.8rem;
@@ -91,6 +92,11 @@ h1,
 Layout
 ======================
 */
+.background-overlay {
+  height: 100vh;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.5);
+}
 #container {
   padding: 2.4rem;
   display: grid;
@@ -101,7 +107,8 @@ Layout
 }
 .logo-container {
   grid-column: 1 / 5;
-
+  display: flex;
+  justify-content: center;
 }
 .panel {
   grid-column: 6 / 12;
@@ -137,7 +144,8 @@ Panel
 .panel {
   padding: 4rem;
   max-width: 40.5rem;
-  margin: 5rem auto;
+  min-width: 30rem;
+  margin: 0 auto;
   border-radius: .8rem;
   background-color: var(--color-main-bg);
 }
@@ -162,7 +170,7 @@ input {
 input {
   border: none;
   outline: none;
-  padding: 0;
+  padding: 0 0 0 .5rem;
   color: #333333;
   font-size: 1.6rem;
   line-height: 3.2rem;
@@ -181,4 +189,32 @@ input {
   height: .2rem;
   width: 100%;
   left: 0;
+}
+
+/* 
+Media queries
+======================
+*/
+@media screen and (max-width: 599px) {
+  .logo-container {
+    display: none;
+  }
+  .panel {
+    grid-column: 1 / -1;
+  }
+
+}
+@media screen and (max-width: 419px) {
+  .logo-container {
+    display: none;
+  }
+  #container {
+    padding: 0;
+  }
+  .panel {
+    grid-column: 1 / -1;
+    border-radius: 0;
+    height: 100vh;
+  }
+
 }
