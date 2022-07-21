@@ -46,6 +46,7 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
 /* 
 General
 ======================
@@ -56,6 +57,8 @@ General
   --color-body-text: #828282;
   --color-main-bg: #ffffff;
   --color-links: #2F80ED;
+  --color-input-field: #E0E0E0;
+
   /* Font size */
   --font-header: 2.4rem;
   --font-medium: 1.4rem;
@@ -69,6 +72,9 @@ body {
   line-height: 2.4rem;
   font-size: 1.2rem;
   color: var(--color-body-text);
+  /* temp */
+  background-color: rgb(227, 205, 205);
+  /* temp */
 }
 h1 {
   line-height: 4.8rem;
@@ -84,12 +90,40 @@ a {
   text-decoration: none;
   color: var(--color-links);
 }
+.panel__button-wrap {
+  text-align: center;
+}
 .panel__button {
   /* text-align: center; */
   display: inline-block;
   line-height: 2.8rem;
-  padding: .7rem 2.45rem;
   border-radius: .9rem;
+  padding: .7rem 2.45rem;
   color: var(--color-main-bg);
   background-color: var(--color-links);
+}
+
+/* 
+Panel
+======================
+*/
+.panel {
+  padding: 4rem;
+  width: 47.5rem;
+  margin: 5rem auto;
+  border-radius: .8rem;
+  background-color: var(--color-main-bg);
+}
+.panel__main-header {
+  margin-bottom: 2.8rem; 
+}
+.panel__button,
+.panel__disclaimer {
+  margin-bottom: 4rem;
+}
+
+input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid var(--color-input-field)
 }
