@@ -33,7 +33,7 @@
 
 ## Overview
 
-![screen recording](./docs/assets/screenshots/formula.gif)
+![screen recording](./docs/assets/screenshots/formula.gif?raw=true)
 
 
 This responsive web form can be viewed [here](https://tobisupreme.github.io/formula).
