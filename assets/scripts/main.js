@@ -16,3 +16,12 @@ function changeBGImage() {
   let pathToImage = "/assets/img/" + bgImage;
   document.body.style.backgroundImage = `url(${pathToImage})`;
 }
+
+// get form
+const form = document.querySelector(".panel__form");
+
+// show success alert on button click
+form.addEventListener("submit", (x) => {
+  x.preventDefault();
+  alert("Sign up successful!")
+})
