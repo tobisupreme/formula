@@ -126,17 +126,21 @@ a {
   text-align: center;
 }
 .panel__button {
-  /* text-align: center; */
+  opacity: 0.8;
   display: inline-block;
+  cursor: pointer;
   font-size: 1.4rem;
   line-height: 2.8rem;
-  border-radius: .9rem;
   margin-bottom: 2rem;
+  border-radius: .9rem;
   padding: .7rem 2.45rem;
   color: var(--color-main-bg);
   background-color: var(--color-links);
+  transition: all .3s;
 }
-
+.panel__button:hover {
+  opacity: 1;
+}
 /* 
 Panel
 ======================
