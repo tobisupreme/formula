@@ -46,3 +46,50 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+/* 
+General
+======================
+*/
+:root {
+  /* Colors */
+  --color-header-text: #000000;
+  --color-body-text: #828282;
+  --color-main-bg: #ffffff;
+  --color-links: #2F80ED;
+  /* Font size */
+  --font-header: 2.4rem;
+  --font-medium: 1.4rem;
+  --font-small: 1.2rem;
+
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  line-height: 2.4rem;
+  font-size: 1.2rem;
+  color: var(--color-body-text);
+}
+h1 {
+  line-height: 4.8rem;
+  font-size: var(--font-header);
+  color: var(--color-header-text);
+}
+
+/* 
+Links and buttons
+======================
+*/
+a {
+  text-decoration: none;
+  color: var(--color-links);
+}
+.panel__button {
+  /* text-align: center; */
+  display: inline-block;
+  line-height: 2.8rem;
+  padding: .7rem 2.45rem;
+  border-radius: .9rem;
+  color: var(--color-main-bg);
+  background-color: var(--color-links);
+}
