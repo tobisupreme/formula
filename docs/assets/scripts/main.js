@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", changeBGImage);
 // change background image
 function changeBGImage() {
   let bgImage = randomBG();
-  let pathToImage = "./assets/img/" + bgImage;
+  let pathToImage = "./docs/assets/img/" + bgImage;
   document.body.style.backgroundImage = `url(${pathToImage})`;
 }
 
@@ -23,5 +23,5 @@ const form = document.querySelector(".panel__form");
 // show success alert on button click
 form.addEventListener("submit", (x) => {
   x.preventDefault();
-  alert("Sign up successful!")
-})
+  alert("Sign up successful!");
+});
