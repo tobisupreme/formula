@@ -82,7 +82,11 @@ h1 {
   font-size: var(--font-header);
   color: var(--color-header-text);
 }
-
+h1, 
+.panel__button,
+.form__dob h6 {
+  font-weight: 700;
+}
 /* 
 Links and buttons
 ======================
