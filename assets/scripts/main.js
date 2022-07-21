@@ -1,5 +1,5 @@
 // background images
-let bgImages = ["fall.jpeg", "flowerPlant.jpeg", "leaf.jpeg"];
+let bgImages = ["fall.jpg", "flowerPlant.jpeg", "leaf.jpeg", "forest.jpg", "lake.jpg"];
 
 // get random image
 function randomBG() {
