@@ -73,9 +73,9 @@ body {
   font-size: 1.2rem;
   font-family: 'Lato', sans-serif;
   color: var(--color-body-text);
-  /* temp */
-  background-color: rgb(227, 205, 205);
-  /* temp */
+  height: 100%;
+
+  background-image: url(/assets/img/flowerPlant.jpeg);
 }
 h1 {
   line-height: 4.8rem;
@@ -86,6 +86,26 @@ h1,
 .panel__button,
 .form__dob h6 {
   font-weight: 700;
+}
+/* 
+Layout
+======================
+*/
+#container {
+  padding: 2.4rem;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  align-items: center;
+  gap: 2.4rem;
+  height: 100%;
+}
+.logo-container {
+  grid-column: 1 / 5;
+
+}
+.panel {
+  grid-column: 6 / 12;
+  align-items: center;
 }
 /* 
 Links and buttons
@@ -116,7 +136,7 @@ Panel
 */
 .panel {
   padding: 4rem;
-  width: 40.5rem;
+  max-width: 40.5rem;
   margin: 5rem auto;
   border-radius: .8rem;
   background-color: var(--color-main-bg);
