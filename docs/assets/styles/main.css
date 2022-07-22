@@ -199,16 +199,13 @@ input {
 .phone-group {
   align-items: center;
 }
+
 .phone-group p {
   font-size: 1rem;
 }
 .phone-group {
-  /* display: grid;
-  grid-template-columns: repeat(14, 1fr); */
-
   justify-content: flex-start;
   gap: .8rem;
-  /* width: 97px; */
   height: 1.6rem;
   margin-bottom: 0;
 }
@@ -219,7 +216,6 @@ input {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   
-  /* border-radius: .6rem; */
   outline: .1rem solid green;
 }
 .sep {
@@ -229,6 +225,24 @@ input {
 }
 .green {
   background-color: green;
+}
+
+.form-phone {
+  position: relative;
+}
+.carrier-logo__wrap {
+  position: relative;
+  right: 0;
+
+  width: 6.4rem;
+
+  background-color: #ffffff;
+}
+img {
+  max-width: 100%;
+}
+.hidden {
+  display: none;
 }
 
 /* 
