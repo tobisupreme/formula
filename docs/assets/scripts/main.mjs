@@ -1,3 +1,5 @@
+import { showLogo } from "./app.mjs";
+
 // background images
 let bgImages = ["fall.jpg", "flowerPlant.jpeg", "leaf.jpeg", "forest.jpg", "lake.jpg"];
 
@@ -9,6 +11,9 @@ function randomBG() {
 
 // change background image on DOM load
 document.addEventListener("DOMContentLoaded", changeBGImage);
+
+// start showLogo function on DOM load
+document.addEventListener("DOMContentLoaded", showLogo);
 
 // change background image
 function changeBGImage() {

@@ -14,7 +14,7 @@
   <!-- Link external css -->
   <link rel="stylesheet" href="./docs/assets/styles/main.css">
   <!-- Link external script -->
-  <script src="./docs/assets/scripts/main.js" defer></script>
+  <script src="./docs/assets/scripts/main.mjs" type="module" defer></script>
 
   <title>Behold</title>
 </head>
@@ -54,6 +54,29 @@
 
               <div class="pizzaz"></div>
             </label>
+          </div>
+
+          <div class="label-group form__phone">
+            <label for="phone">Phone number
+              <div class="label-group phone-group">
+                <p>+234</p>
+                <div class="sep"></div>
+                <div class="ng-flag">
+                  <div class="stripe green"></div>
+                  <div class="stripe white"></div>
+                  <div class="stripe green"></div>
+                </div>
+              </div>
+              <div>
+                <input type="tel" name="phone" id="phone" required>
+          
+                <div class="pizzaz"></div>
+              </div>
+            </label>
+            
+            <div class="carrier-logo__wrap">
+              <img class="hidden" id="carrier-logo" src=""></img>
+            </div>
           </div>
 
           <div class="label-group form__password">
