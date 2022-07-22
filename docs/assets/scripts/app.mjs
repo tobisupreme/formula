@@ -22,7 +22,7 @@ export function showLogo() {
 
     if (networkName) {
       // if network name is a match, display the corresponding logo
-      logo.src = `./docs/assets/logos/${networkName.toLowerCase()}.png`;
+      logo.src = `./docs/assets/img/logos/${networkName.toLowerCase()}.png`;
       logo.classList.remove("hidden");
     } else {
       // if network name is not found, display nothing
