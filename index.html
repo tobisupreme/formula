@@ -90,8 +90,14 @@
           <div class="form__dob">
             <h6>Date of birth</h6>
             <div class="label-group">
-              <label for="month">Month / Year
-                <input id="month" type="month" min="1900-01" max="2022-07" required>
+              <label for="month">Month
+                <select name="month" id="month">
+                    <option value="" disabled>-- Choose month --</option>
+                </select>
+              </label>
+
+              <label for="year">Year
+                <input id="year" type="number" min="1990" required>
 
                 <div class="pizzaz"></div>
               </label>
@@ -104,11 +110,11 @@
             </div>
           </div>
 
-
           <section class="panel__disclaimer">
             <p>By clicking Create account, I agree that I have read and accepted the <a href="#">Terms of Use</a> and <a
                 href="#">Privacy Policy</a>.</p>
           </section>
+
           <div class="panel__button-wrap">
             <button class="panel__button">Create account</button>
           </div>

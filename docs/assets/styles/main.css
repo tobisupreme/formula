@@ -173,7 +173,11 @@ input {
   width: 100%;
 }
 input,
-input[type="month"] {
+select,
+option {
+  /* appearance: none; */
+  height: 3.2rem;
+  background-color: #00000000;
   border: none;
   outline: none;
   padding: 0 0 0 .5rem;
