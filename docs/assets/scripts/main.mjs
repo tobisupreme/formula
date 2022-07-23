@@ -1,4 +1,4 @@
-import { showLogo } from "./app.mjs";
+import { showLogo, populateMonthsDropdown } from "./app.mjs";
 
 // background images
 let bgImages = ["fall.jpg", "flowerPlant.jpeg", "leaf.jpeg", "forest.jpg", "lake.jpg"];
@@ -14,6 +14,9 @@ document.addEventListener("DOMContentLoaded", changeBGImage);
 
 // start showLogo function on DOM load
 document.addEventListener("DOMContentLoaded", showLogo);
+
+// populate dropdown with months on DOM load
+document.addEventListener("DOMContentLoaded", populateMonthsDropdown);
 
 // change background image
 function changeBGImage() {
