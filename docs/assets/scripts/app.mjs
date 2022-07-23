@@ -1,5 +1,6 @@
-import { getNetworkOperators } from "./data.mjs";
+import { getNetworkOperators, getMonthsOfTheYear } from "./data.mjs";
 
+// show network operator logo of user's phone number
 export function showLogo() {
   // Get object of network operators
   const networkOperators = getNetworkOperators();
@@ -58,4 +59,23 @@ export function showLogo() {
     // return the variable (containing the matching network name)
     return matchingNetworkOperator;
   }
+}
+
+// populate dropdown with months
+export function populateMonthsDropdown() {
+  // get months of the year
+  const months = getMonthsOfTheYear();
+  const select = document.querySelector("#months");
+
+  months.forEach((month) => {
+    // <option></option>
+    const option = document.createElement("option");
+
+    // <option>month</option>
+    option.textContent = month;
+    // <option value=month>month</option>
+    option.value = month;
+    // add current <option> element to the dropdown list
+    select.appendChild(option);
+  });
 }
